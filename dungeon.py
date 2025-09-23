@@ -1,5 +1,9 @@
 
 
+
+
+
+
 hero_stats = {
     "name" : "hero",
     "strength" : 7,
@@ -7,8 +11,7 @@ hero_stats = {
 
 }
 
-
-
+pisscount = 0
 
 def player_flee():
     print("You chose to flee")
@@ -26,6 +29,21 @@ def player_stats():
     print("You are:")
     for key, value, in hero_stats.items():
         print(f"{key} : {value}" )
+
+def player_piss(pisscount):
+    if pisscount == 0:
+        print("I don't wanna")
+        pisscount = 1
+        return pisscount
+    elif pisscount == 1:
+        print("Do I have to?")
+        pisscount = 2
+        return pisscount
+    elif pisscount == 2:
+        print("a gentle warmth fills your pants, the piss is streaming")
+        pisscount = 0
+    return pisscount
+
 
 
 
@@ -55,6 +73,8 @@ while (isPlaying):
         player_move()
     elif (action == "flee"):
         player_flee()
+    elif (action == "piss"):
+        pisscount = player_piss(pisscount)
     else:
         print ("INVALID ACTION")
         
