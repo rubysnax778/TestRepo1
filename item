@@ -1,0 +1,36 @@
+
+
+
+class Items():
+    def __init__(self, name, description):
+        self.name = name
+        self.description = description
+        self.max_stack = 1
+
+        
+    def use_item(self, item_name, consumable):
+        match item_name:
+            case "Health Potion":
+                print("You used a Health Potion, you restored 5 Health")
+                consumable = True
+            case "sword":
+                print("You pull out your sword and swing")
+                #if in_combat:
+                    #print("You strike the enemy")
+                    #damage = 10
+                    #return damage
+                #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!WATING FOR COMBAT TO BE IMPLEMENTED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+                #else:
+                    #print("you hit nothing, but the air now fears your swordsmanship")
+
+            case "magic attack":
+                print("You cast a fireball")
+                #if in_combat:
+                    #print("You strike the enemy with a fireball")
+                    #damage = 15
+                    #return damage
+                #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!WATING FOR COMBAT TO BE IMPLEMENTED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+                #else:
+                    #print("you hit nothing, but the air now fears your magical prowess")

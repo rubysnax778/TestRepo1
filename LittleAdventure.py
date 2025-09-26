@@ -2,8 +2,6 @@
 
 
 
-
-
 hero_stats = {
     "name" : "hero",
     "strength" : 7,

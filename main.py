@@ -70,11 +70,11 @@ while True:
         #finding boss (add trigger upon search for boss or other actions)
         if len(inventory) <5:
             print(f"You have stumbled across {rooms[current_room]['Boss']}.")
-            break
+            #break
 
         else:
             print(f"You do not see a {rooms[current_room]['Boss']}.")
-            break
+            #break
 
     user_input = input("What would you like to do?:\n")
 

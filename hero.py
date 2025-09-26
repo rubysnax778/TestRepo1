@@ -5,11 +5,12 @@
 
 
 
+from character import Character
 
-
-class Hero ():
+class Hero (Character):
     def __init__(self):
-        self.max_health = 100.0
+        super().__init__()
+        #self.max_health = 100.0(moved)
 
         #move this var later vv
         self.health_potion_str = 5
@@ -60,8 +61,10 @@ class Hero ():
 
 
 
-player = Hero()
+hero = Hero()
 
-player.set_name("Ruby")
+hero.set_name("Ruby")
+hero.print_stats()
+hero.
 
 #print(f"Here are your Hero Stats {player.stats}")
